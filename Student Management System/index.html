@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management</title>
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<div class="stars" id="stars"></div>
+
+  <div class="button-row">
+    <h2>Student Management System</h2>
+  
+      <button onclick="window.location.href='add.html'"type="submit">Add New Student</button>
+    
+      <button onclick="window.location.href='edit.html'" type="submit">Edit Student Information</button>
+
+      <button onclick="window.location.href='remove.html'" type="submit">Remove Student</button>
+    
+      <button onclick="window.location.href='search.html'" type="submit">Search Student</button>
+
+      <button onclick="window.location.href='display.html'" type="submit">Display All Students</button>
+  </div>
+  
+  <script>
+    // Generate stars dynamically
+    const starsContainer = document.getElementById('stars');
+    const numStars = 100;
+
+    for (let i = 0; i < numStars; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * 100 + '%';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.animationDuration = (1 + Math.random() * 2) + 's';
+      star.style.animationDelay = Math.random() * 2 + 's';
+      starsContainer.appendChild(star);
+    }
+  </script>
+</body>
+</html>
