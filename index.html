@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter-box">
+    <h2>Currency Converter</h2>
+    <form action="Currencyconverter" method="post">
+      <label for="amount">Amount:</label>
+      <input type="number" name="amount" id="amount" step="0.01" required placeholder="Enter amount">
+
+      <label for="from">From Currency:</label>
+      <select name="from" id="from" required>
+        <option value="">--Select--</option>
+        <option value="USD">USD</option>
+        <option value="INR">INR</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+        <option value="AUD">AUD</option>
+        <option value="CHF">CHF</option>
+        <option value="CNY">CNY</option>
+        <option value="SGD">SGD</option>
+        <option value="NZD">NZD</option>
+        <option value="KRW">KRW</option>
+        <option value="RUB">RUB</option>
+        <option value="BRL">BRL</option>
+        <option value="ZAR">ZAR</option>
+      </select>
+
+      <label for="to">To Currency:</label>
+      <select name="to" id="to" required>
+        <option value="">--Select--</option>
+        <option value="USD">USD</option>
+        <option value="INR">INR</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+        <option value="AUD">AUD</option>
+        <option value="CHF">CHF</option>
+        <option value="CNY">CNY</option>
+        <option value="SGD">SGD</option>
+        <option value="NZD">NZD</option>
+        <option value="KRW">KRW</option>
+        <option value="RUB">RUB</option>
+        <option value="BRL">BRL</option>
+        <option value="ZAR">ZAR</option>
+      </select>
+
+      <button type="submit">Convert</button>
+    </form>
+  </div>
+</body>
+</html>
